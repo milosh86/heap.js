@@ -1,2 +1,2 @@
-# heap.js
-Heap data structure
+# Heap.js
+===========================

@@ -1,0 +1,40 @@
+{
+  "name": "heap.js",
+  "version": "0.1.0",
+  "description": "Array based binary Heap data structure",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "gulp build",
+    "test": "gulp test",
+    "cover": "gulp cover",
+    "watch": "gulp watch",
+    "clean": "gulp clean",
+    "check-deps": "npm outdated && npm-check"
+  },
+  "author": "Milos Dzepina",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-istanbul": "^0.7.0",
+    "babel-plugin-rewire": "^1.0.0-rc-2",
+    "babel-preset-latest": "^6.16.0",
+    "clear": "0.0.1",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^6.1.2",
+    "gulp-load-plugins": "^1.1.0",
+    "gulp-newer": "^1.0.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-preprocess": "^1.2.0",
+    "gulp-rimraf": "^0.2.0",
+    "gulp-shell": "^0.5.1",
+    "gulp-size": "^2.0.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "npm-check": "^5.2.1",
+    "standard": "^8.6.0",
+    "tap-colorize": "^1.2.0",
+    "tape": "^4.5.1"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.7.4"
+  }
+}
