@@ -6,8 +6,8 @@
   "scripts": {
     "build": "gulp build",
     "test": "gulp test",
-    "coverage": "gulp cover",
-    "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
+    "cover": "gulp cover",
+    "coveralls": "npm run cover && cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
     "watch": "gulp watch",
     "clean": "gulp clean",
     "check-deps": "npm outdated && npm-check",
