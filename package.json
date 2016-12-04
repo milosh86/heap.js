@@ -6,7 +6,8 @@
   "scripts": {
     "build": "gulp build",
     "test": "gulp test",
-    "cover": "gulp cover",
+    "coverage": "gulp cover",
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
     "watch": "gulp watch",
     "clean": "gulp clean",
     "check-deps": "npm outdated && npm-check",
@@ -20,6 +21,7 @@
     "babel-plugin-rewire": "^1.0.0-rc-2",
     "babel-preset-latest": "^6.16.0",
     "clear": "0.0.1",
+    "coveralls": "^2.11.15",
     "gulp": "^3.9.0",
     "gulp-babel": "^6.1.2",
     "gulp-load-plugins": "^1.1.0",
