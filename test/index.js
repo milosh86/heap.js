@@ -1,1 +1,1 @@
-require('./HeapTest.js');
+require('./HeapTest.js')

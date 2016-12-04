@@ -66,8 +66,7 @@ class Heap {
    */
   get size () {
     // index 0 is not used!
-    let length = this._arr.length
-    return length === 0 ? 0 : length - 1
+    return this._arr.length - 1
   }
 
   /**
@@ -185,11 +184,13 @@ class Heap {
 
   pop () {
     let N = this.size
-    let max = this._arr[1]
+    if (N === 0) return
 
+    let max = this._arr[1]
     this._swap(1, N)
     this._arr[N] = null
-    this._arr.length = N - 1
+    this._arr.length = N
+    this._sink(1)
 
     return max
   }
