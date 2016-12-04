@@ -9,12 +9,14 @@
     "cover": "gulp cover",
     "watch": "gulp watch",
     "clean": "gulp clean",
-    "check-deps": "npm outdated && npm-check"
+    "check-deps": "npm outdated && npm-check",
+    "lint": "standard",
+    "lint:fix": "standard --fix"
   },
   "author": "Milos Dzepina",
   "devDependencies": {
     "babel-cli": "^6.18.0",
-    "babel-istanbul": "^0.7.0",
+    "babel-istanbul": "^0.11.0",
     "babel-plugin-rewire": "^1.0.0-rc-2",
     "babel-preset-latest": "^6.16.0",
     "clear": "0.0.1",
